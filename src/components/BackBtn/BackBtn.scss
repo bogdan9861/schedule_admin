@@ -1,0 +1,23 @@
+.backBtn {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 9999;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 9px;
+
+  background-color: #fff;
+  box-shadow: 2px 5px 6px 0px #00000033;
+  border: none;
+  border-radius: 10px;
+
+  transition: all 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 0px #00000067;
+  }
+}
