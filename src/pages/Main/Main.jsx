@@ -13,8 +13,19 @@ const Main = () => {
     }
   }, []);
 
+  const onExit = () => {
+    localStorage.removeItem("token");
+    navigate("/login");
+  };
+
   return (
     <div className="main">
+      <button className="main__exit" onClick={onExit}>
+        <img
+          src="https://img.icons8.com/?size=100&id=EEbC6eISU8ef&format=png&color=EB0E0E"
+          alt=""
+        />
+      </button>
       <div className="main__inner">
         <h1 className="main__title">Admin</h1>
         <Button

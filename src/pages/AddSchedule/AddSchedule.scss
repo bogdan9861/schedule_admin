@@ -41,10 +41,17 @@
 
   &__label {
     margin-bottom: 10px;
+    color: rgba($color: #000000, $alpha: 0.8);
+  }
+
+  &__select {
+    margin-bottom: 10px;
+    width: 200px;
   }
 
   &__dragger {
     height: 100px;
+    margin-bottom: 40px;
 
     position: relative;
 

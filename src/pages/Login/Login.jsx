@@ -6,8 +6,7 @@ import service from "../../api/service";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const { user } = service();
-  const { login } = user;
+  const { login } = service();
   const navigate = useNavigate();
 
   const [userLogin, setUserLogin] = useState("");
@@ -45,6 +44,7 @@ const Login = () => {
         <Input
           className="card__input"
           placeholder="Пароль"
+          type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
 
